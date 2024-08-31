@@ -137,6 +137,42 @@
               </div>
             </div>
           </div>
+
+          <div class="modal" tabindex="-1" id="modalDeletar">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Tem certeza que deseja deletar?</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p id="deleteContent"></p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                    onclick="deletarProduto()"
+                  >
+                    Deletar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <hr />
         <table id="products-list" class="table table-striped">
